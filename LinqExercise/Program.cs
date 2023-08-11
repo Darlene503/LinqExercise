@@ -49,14 +49,14 @@ namespace LinqExercise
             }
 
 
-            var desc = numbers.OrderByDescending(x => x);
+            var descendingNumbers = numbers.OrderByDescending(x => x);
             Console.WriteLine("------------");
             Console.WriteLine("Descending");
 
 
-            foreach (var x in desc)
+            foreach (var number in descendingNumbers)
             {
-                Console.WriteLine(numbers);
+                Console.WriteLine(number);
 
             }
 
@@ -72,9 +72,9 @@ namespace LinqExercise
 
             Console.WriteLine("First 4 asc");
 
-            foreach (var item in asc.Take(4))
+            foreach (var item in firstFour)
             {
-                Console.WriteLine(numbers);
+                Console.WriteLine(item);
             }
 
             // Change the value at index 4 to your age, then print the numbers in descending order
